@@ -1,0 +1,35 @@
+
+  
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Cep</title>
+    <link rel="stylesheet" href="/src/css/index.css">
+</head>
+
+<body>
+    <header>
+    <h1>Consultar CEP</h1>
+    </header>
+    <section id="principal">
+        <div class="buscar1">
+            <input type="text" placeholder="Digite seu cep:" id="cep">
+            <button id="consulta" onclick="buscarendereco()">Buscar</button><br><br>
+        </div>
+        <section class="endereco">
+            <input type="text" id="rua" disabled>
+            <input type="text" id="bairro" disabled>
+            <input type="text" id="cidade" disabled>
+            <input type="text" id="estado" disabled>
+        </section>
+    </section>
+
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/src/js/index.js"></script>
+
+</html>
